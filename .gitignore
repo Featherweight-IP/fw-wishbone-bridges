@@ -1,0 +1,10 @@
+
+packages/
+*.fst
+*.vcd
+simv.*
+*.vvp
+results.xml
+pybfms_*
+
+__pycache__/

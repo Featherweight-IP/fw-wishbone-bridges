@@ -1,0 +1,7 @@
+
+cocotb
+vlsim
+
+-e git+https://github.com/pybfms/pybfms.git#egg=pybfms
+-e git+https://github.com/pybfms/pybfms_wishbone.git#egg=pybfms_wishbone
+
