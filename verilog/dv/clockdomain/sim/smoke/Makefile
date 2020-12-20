@@ -1,6 +1,4 @@
 TEST_DIR := $(abspath $(dir $(lastword $(MAKEFILE_LIST))))
-PACKAGES_DIR := $(abspath $(TEST_DIR)/../../packages)
-RTL_DIR := $(abspath $(TEST_DIR)/../../verilog/rtl)
 
 DV_TOOL ?= icarus
 

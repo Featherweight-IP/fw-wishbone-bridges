@@ -1,7 +1,7 @@
 CLOCKDOMAIN_COMMON_DIR := $(dir $(lastword $(MAKEFILE_LIST)))
-PACKAGES_DIR := $(abspath $(CLOCKDOMAIN_COMMON_DIR)/../../../packages)
-GL_DIR := $(abspath $(CLOCKDOMAIN_COMMON_DIR)/../../../verilog/gl)
-RTL_DIR := $(abspath $(CLOCKDOMAIN_COMMON_DIR)/../../../verilog/rtl)
+PACKAGES_DIR := $(abspath $(CLOCKDOMAIN_COMMON_DIR)/../../../../packages)
+GL_DIR := $(abspath $(CLOCKDOMAIN_COMMON_DIR)/../../../gl)
+RTL_DIR := $(abspath $(CLOCKDOMAIN_COMMON_DIR)/../../../rtl)
 DV_MK_DIR := $(PACKAGES_DIR)/sim-mk
 
 ifeq (1,$(RULES))
