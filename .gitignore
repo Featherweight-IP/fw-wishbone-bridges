@@ -8,3 +8,15 @@ results.xml
 pybfms_*
 
 __pycache__/
+
+# Don't keep gate-level nets under source control
+verilog/gl/
+def/
+gds/
+lef/
+mag/
+maglef/
+spi/
+
+openlane/*/runs/
+*.cvcrc

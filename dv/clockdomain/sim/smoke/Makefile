@@ -2,12 +2,12 @@ TEST_DIR := $(abspath $(dir $(lastword $(MAKEFILE_LIST))))
 PACKAGES_DIR := $(abspath $(TEST_DIR)/../../packages)
 RTL_DIR := $(abspath $(TEST_DIR)/../../verilog/rtl)
 
-TOP_MODULE = wb_clockdomain_bridge_tb
-SRCS += $(TEST_DIR)/../common/sv/wb_clockdomain_bridge_tb.sv
-SRCS += $(RTL_DIR)/wb_clockdomain_bridge.v
+DV_TOOL ?= icarus
 
-include $(PACKAGES_DIR)/sim-mk/mkfiles/sim-mk.mk
-include $(TEST_DIR)/../common/common.mk
+TOP_MODULE = wb_clockdomain_bridge_tb
+SRCS += $(TEST_DIR)/../../common/sv/wb_clockdomain_bridge_tb.sv
+
+include $(TEST_DIR)/../../common/clockdomain.mk
 
 #********************************************************************
 #* cocotb testbench setup
@@ -20,8 +20,7 @@ VLSIM_CLKSPEC += clock=10ns
 
 RULES := 1
 
-all : run
+#all : run
 
-include $(TEST_DIR)/../common/common.mk
-include $(PACKAGES_DIR)/sim-mk/mkfiles/sim-mk.mk
+include $(TEST_DIR)/../../common/clockdomain.mk
 
