@@ -5,6 +5,11 @@ package:
         - name: fwprotocol-defs
           url: https://github.com/featherweight-ip/fwprotocol-defs.git
           type: raw
+
+    dev-deps:
+        - name: fwprotocol-defs
+          url: https://github.com/featherweight-ip/fwprotocol-defs.git
+          type: raw
         - name: sim-mk
           url: https://github.com/fvutils/sim-mk.git
           type: raw
@@ -19,11 +24,4 @@ package:
           type: python
         - name: pybfms-wishbone
           url: https://github.com/pybfms/pybfms-wishbone.git
-          type: python
-    dev-deps:
-        - name: fwprotocol-defs
-          url: https://github.com/featherweight-ip/fwprotocol-defs.git
-          type: raw
-        - name: sim-mk
-          url: https://github.com/fvutils/sim-mk.git
-          type: raw
+          type: python          
